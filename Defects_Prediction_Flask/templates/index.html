@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Inside the <head> section of your HTML file -->
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+
+    <title>Code Error Predictor</title>
+</head>
+<body>
+    <h1>Code Error Predictor</h1>
+
+    <form method="post" action="/">
+        <label for="code_snippet">Enter Code:</label><br>
+        <textarea name="code_snippet" rows="10" cols="50"></textarea><br>
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if predicted_error %}
+        <h2>Predicted Error:</h2>
+        <p>{{ predicted_error }}</p>
+    {% endif %}
+
+    {% if error_output %}
+        <h2>Error Output:</h2>
+        {% for error in error_output %}
+            <p>{{ error }}</p>
+        {% endfor %}
+    {% endif %}
+
+</body>
+</html>
