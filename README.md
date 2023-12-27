@@ -1,17 +1,17 @@
-### Approach Outline: Predicting the phase of code that is more likely to be error-prone or risky
+# Approach Outline: Predicting the phase of code that is more likely to be error-prone or risky
 
-### Features Considered Relevant:
+## Features Considered Relevant:
 Code Snippets: Input sequences representing code snippets extracted from software projects, Q&A forums, and websites
 Expected Outputs: Corresponding error types or defect labels associated with each code snippet.
 
-### Algorithm/Model Selection:
-## LSTM-Based Neural Network:
+## Algorithm/Model Selection:
+### LSTM-Based Neural Network:
 Utilizing Long Short-Term Memory (LSTM) architecture for sequence modeling.
 Embedding layers for token representation.
 Cross-entropy Loss for multi-class classification.
 Adam optimizer for efficient parameter updates.
 
-### Data Preparation:
+## Data Preparation:
 1. Tokenization:
 Breaking down code snippets into individual tokens. 
 2. Label Encoding:
@@ -20,12 +20,12 @@ Assigning numerical labels to error types for supervised learning.
 Mapping tokens to continuous vectors using embedding layers.
 Padding sequences to a fixed length for consistent input size.
 
-### Model Training:
+## Model Training:
 Training Process:
 Iterative training with mini-batch processing.
 Hyperparameter tuning for optimal model performance.
 
-### Evaluation:
+## Evaluation:
 Metrics:
 Assessing model accuracy, precision, recall, and confusion matrix.
 Flask Integration:
