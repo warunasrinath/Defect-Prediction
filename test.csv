@@ -1,1 +1,21 @@
-#add csv values for test csv
+code_snippet,expected_output
+"print(5 / 0)",ZeroDivisionError on line 1
+"print(undefined_variable)",NameError on line 1
+"x = 10\nx += '5'",TypeError on line 2
+"['apple', 'banana', 'cherry'][3]",IndexError on line 1
+"class MyClass:\n    def __init__(self):\n        print(self.undeclaredVar)",AttributeError on line 3
+"def recursive_function():\n    recursive_function()\nrecursive_function()",RecursionError on line 2
+"print('Hello World)",SyntaxError on line 1
+"1 / 0",ZeroDivisionError on line 1
+"lambda x: x++",SyntaxError on line 1
+"{'one': 1, 'two': 2}['three']",KeyError on line 1
+"list(123)",TypeError on line 1
+"print('Nested error:', 5 + '3')",TypeError on line 1
+"if a == 4\n    print('a is 4')",SyntaxError on line 1
+"import notamodule",ModuleNotFoundError on line 1
+"del x\nx",NameError on line 2
+"'string'.index('not found')",ValueError on line 1
+"print(unbalanced_parentheses)",SyntaxError on line 1
+"exec('for i in range(5):\nprint(i)')",IndentationError on line 2
+"assert 1 == 2",AssertionError on line 1
+"x = lambda a : a + 10\nprint(x('5'))",TypeError on line 2
