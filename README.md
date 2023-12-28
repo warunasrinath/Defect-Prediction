@@ -41,3 +41,39 @@ Explore additional architectures or ensemble methods for potential performance i
 Continuously update and retrain the model with new data to adapt to evolving code patterns.
 
 This approach combines LSTM-based neural networks with rigorous data preparation and evaluation processes to build a robust code defect prediction model. The emphasis is on leveraging deep learning techniques for effective defect identification in software development.
+
+
+### Shape of the dataset:-
+
+Code defects in more error-prone or risky areas based on code snippets. 
+
+AssertionError on line 1,
+AttributeError on line 1,
+AttributeError on line 3,
+AttributeError on line 4,
+FileNotFoundError on line 1,
+ImportError on line 1,
+IndentationError on line 2,
+IndexError on line 1,
+IndexError on line 2,
+KeyError on line 1,
+KeyError on line 2,
+ModuleNotFoundError on line 1,
+NameError on line 1,
+NameError on line 2,
+RecursionError on line 1,
+RecursionError on line 2,
+Success,
+SyntaxError on line 1,
+SyntaxError on line 2,
+TypeError on line 1,
+TypeError on line 2,
+TypeError on line 3,
+ValueError on line 1,
+ValueError on line 2,
+ZeroDivisionError on line 1,
+ZeroDivisionError on line 2,
+ZeroDivisionError on line 3,
+
+The segment from the dataset
+![code defect predictsCapture](https://github.com/warunasrinath/Defect-Prediction/assets/56961480/4623a12c-e76f-4fd6-b6fc-e4243270cddf)
